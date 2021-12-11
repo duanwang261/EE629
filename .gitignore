@@ -1,0 +1,6 @@
+# /server-side/node_modules/
+# /server-side/package-lock.json
+
+# Dependency directory
+node_modules
+package-lock.json
