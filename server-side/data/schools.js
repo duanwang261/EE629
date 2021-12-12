@@ -1,6 +1,6 @@
 const mongoCollections = require('../config/mongoCollections');
 const schools = mongoCollections.schools;
-
+var { ObjectId } = require('mongodb');
 
 
 const exportedMethods = {
@@ -33,13 +33,27 @@ const exportedMethods = {
     try {
       const newInsertInformation = await schoolsCollection.insertOne(newTempSchool);
       const newId = newInsertInformation.insertedId;
+      
       return await this.getSchoolById(newId);
     } catch (e) {
       throw "add school failed";
     }
-  
-  
   },
+
+    async getSchoolsbySearchTerm(searchTerm) {
+      if (!searchTerm) throw 'No search term provided';
+
+      const schoolsCollection = await schools();
+      const query = { schoolname: { $regex: ".*" + searchTerm + ".*" }};
+      const allSchools = await schoolsCollection.find(query).toArray();
+
+      if (!allSchools) throw 'schools not found';
+
+      return allSchools;
+    }
+  
+  
+
 
  
 

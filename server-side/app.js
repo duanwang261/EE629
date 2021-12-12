@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
 const configRoutes = require('./routes');
+var cors = require('cors')
 
+app.use(cors());
 configRoutes(app);
 
 app.listen(3008, () => {
