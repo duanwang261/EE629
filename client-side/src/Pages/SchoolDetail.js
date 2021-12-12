@@ -149,7 +149,7 @@ const SchoolDetail = (props) => {
                         <label className={classes.secondary_title}>Admitted ACT Combined 50 Percentile: {postData.admittedACTCombined50Percentile}</label>
                     </Typography>
                     <Typography className={classes.secondary_container}>
-                        <label className={classes.secondary_title}>Admitted ACT Combined 75 Percentile: {postData.addreadmittedACTCombined75Percentiless}</label>
+                        <label className={classes.secondary_title}>Admitted ACT Combined 75 Percentile: {postData.admittedACTCombined75Percentile}</label>
                     </Typography>
 
                 </CardContent>
