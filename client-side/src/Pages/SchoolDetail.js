@@ -101,7 +101,7 @@ const SchoolDetail = (props) => {
                         <label className={classes.secondary_title}>Address: {postData.address}</label>
                     </Typography>
                     <Typography className={classes.secondary_container}>
-                        <label className={classes.secondary_title}>Total Students:</label>{postData.totalStudentsCount}
+                        <label className={classes.secondary_title}>Total Students:{postData.totalStudentsCount}</label>
                     </Typography>
                     <Typography className={classes.secondary_container}>
                         <label className={classes.secondary_title}>Graduate Students: {postData.graduateStudentsCount}</label>
