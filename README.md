@@ -7,7 +7,7 @@ Students who graduate from high school may want find their dream university. The
 
 Therefore, students usually need find those key words one by one on different website.
 
-My project focus on those data and give students a convience plateform to reach those information. 
+My project focus on those data and give students a convenient plateform to reach those information. 
 The home page will show all of the schools basic information. It will refresh more schools when you drop down page because Implementation of react.
 The search function allow user input school name and refresh the result immediately. 
 
